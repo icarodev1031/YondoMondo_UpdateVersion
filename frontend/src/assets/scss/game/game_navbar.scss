@@ -1,0 +1,159 @@
+#game_navbar {
+  height: 75px;
+  position:absolute;
+  top:0px;
+  left: 0px;
+  width: calc(100vw*0.94);
+  // max-width: 94%;
+  margin-top:46.83px;
+  margin-left: 3%;
+  margin-right:3%;
+  
+  z-index: 999;
+  font-family: Mario Font;
+  @include resp(1500px){
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  @include resp(1700px){
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+  @include resp($xs) {
+    margin-top: 31;
+    font-weight: 400;
+  }
+  @include resp($lg) {
+    margin-top: 31px;
+    font-weight: 400;
+    background-image: url("../imgs/illustrations/header_back.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  // navbar container
+  .container {
+    // @include resp($xxl) {
+    //   max-width: 1400px;
+    // }
+  max-width: 1257px;
+
+  }
+
+  // navbar brand
+  .navbar-brand {
+    font-size: 16px;
+    line-height: 200%;
+    @include resp($xs) {
+      padding-left: 10px;
+    }
+  }
+
+  // navigation button
+  .navbar-toggler {
+    padding: 0px !important;
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+    img {
+      width: 50px;
+      @include resp($xs) {
+        width: 57px;
+        height: 57px;
+      }
+    }
+  }
+  // navbar item
+  .nav-item {
+    // nav link
+    cursor: pointer;
+    .nav-link {
+      line-height: 200%;
+      margin-right: 57px;
+      @include resp($xs) {
+        padding-left: 16px;
+        font-size: 11px;
+      }
+      @include resp($lg) {
+        font-size: 11px;
+      }
+      @include resp($xl) {
+        font-size: 11px;
+      }
+      @include resp($xxl) {
+        font-size: 11px;
+      }
+    }
+
+    .nav-link:hover {
+      color: #fbba41 !important;
+    }
+  }
+  .show {
+    background-color: #54678ef0;
+    background-size: cover;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .address-image{
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .collapsing {
+    display: none;
+
+  }
+  // navbar icon
+  .social-icons {
+    @include resp($xs) {
+      padding-left: 16px;
+    }
+    @include resp($lg) {
+      padding-left: 20px;
+    }
+    @include resp($xl) {
+      padding-left: 35px;
+    }
+    @include resp($xxl) {
+      padding-left: 50px;
+    }
+
+    a {
+      img {
+        width: 50px;
+        height: 50px;
+        @include resp($lg) {
+          width: 30px;
+          height: initial;
+        }
+        @include resp($xxl) {
+          width: 48px;
+        }
+      }
+      &:nth-child(2) {
+        svg {
+          @include resp($xxl) {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  // navbar collapse
+  .collapse {
+    @include resp($lg) {
+      position: relative;
+    }
+    .navbar-nav {
+      display:flex;
+      align-items:center;
+      @include resp($lg) {
+        position: absolute;
+        right: 0px;
+      }
+    }
+  }
+}

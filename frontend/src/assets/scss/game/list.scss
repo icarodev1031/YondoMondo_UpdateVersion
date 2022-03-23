@@ -1,0 +1,63 @@
+#list {
+    background-color: black;
+    background-repeat: repeat-y;
+    width: 100vw;
+        height: 100vh;
+    font-family: Mario Font;
+    padding-top:158.7px;
+    @include resp($lg){
+        padding-left: 320px;
+        padding-right:320px;
+    }
+    
+    .container-block{
+        
+        .title{
+            margin-bottom: 44.77px;
+            font-size: 20px;
+            text-align: center;
+            @include maxResp($sm){
+                font-size: 12px;
+            }
+        }
+        .content-text{
+            margin-bottom: 58.11px;
+            font-size: 15px;
+            @include maxResp($sm){
+                font-size: 10px;
+            }
+        }
+        .content-area{
+            background-color: rgb(29, 29, 36);
+            height: 303px;
+            width: 100%;
+            .title{
+                margin-left: 60.41px;
+                margin-top: 18.15px;
+                color:white;
+                font-size: 12px;
+                margin-bottom: 27.66px;
+                float: left;
+            }
+            .detail{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                width: 100%;
+                .item{
+                    margin-bottom: 15px;
+                    width: 100%;
+                    font-family: Metropolis;
+                    font-size: 12px;
+                    display: flex;
+                    justify-content: space-around;
+                    a{
+                        color: purple;
+                    }
+                }
+            }
+        }
+    }
+    
+  }
+  

@@ -1,0 +1,107 @@
+#result2   {
+    
+    background-image: url("../imgs/illustrations/result_bg.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: cover;
+    height: 100vh;
+    @include maxResp($md){
+        height: auto;
+    }
+
+    font-family: Mario Font;
+    padding-top:124px;
+    @include resp($xl){
+        padding-left: 235px;
+        padding-right:235px;
+    }
+    @include maxResp($xl){
+        padding-left: 10px;
+        padding-right:10px;
+    }
+    
+    .container-block{
+        
+        .title{
+            margin-top: 16;
+            font-size: 35px;
+            text-align: center;
+            @include maxResp($sm){
+                font-size: 15px;
+            }
+            
+        }
+        .content-area{
+            margin-top: 50.57px;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            .content-main{
+                display: flex;
+                justify-content: space-between;
+                height:451px;
+                width: 100%;
+                align-items: center;
+                @include maxResp($xl){
+                    justify-content: space-around; 
+                }
+                @include maxResp($md){
+                    flex-wrap: wrap;
+                    height: auto;
+                }
+                .vs{
+                    font-size: 60px;
+                    color: white; 
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    @include maxResp($lg){
+                        display: none;  
+                    }
+                }
+                .player-card{
+                    margin-bottom: 10px;
+                    width: 287px;
+                    height: 451px;
+                    border-radius: 5px;
+                    display: flex;
+                    padding:15px;
+                    justify-content: start;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    .player{
+                        width: 229.61px;
+                        height: 219.02px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 8px;
+                        margin: 5px;
+
+                    }
+                    .apple{
+                        margin-top: 20px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        background-image: url("../imgs/illustrations/result2_frame.png");
+                        background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                        padding:10px;
+                    }
+                }
+            }
+            .start-btn{
+                margin-top: 8px;
+                // @include  maxResp($md){
+                //     margin-top: 20px;
+                // }
+                margin-bottom: 20px;
+            }
+            
+        }
+    }
+    
+  }
+  

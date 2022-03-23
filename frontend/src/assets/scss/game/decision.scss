@@ -1,0 +1,147 @@
+#decision {
+    background-image: url("../imgs/illustrations/background.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: cover;
+    height: auto;
+    @include resp($lg){
+        height: 100vh;
+    }
+    font-family: Mario Font;
+    padding-top:158.7px;
+    @include resp($lg){
+        padding-left: 139px;
+        padding-right:139px;
+    }
+    @include maxResp($lg){
+    }
+    .container-block{
+        
+        .title{
+            margin-bottom: 44.77px;
+            font-size: 20px;
+            text-align: center;
+            @include maxResp($sm){
+                font-size: 12px;
+            }
+        }
+        .content-text{
+            margin-bottom: 58.11px;
+            font-size: 15px;
+            @include maxResp($sm){
+                font-size: 10px;
+            }
+        }
+        .content-area{
+            .content-main{
+                display: flex;
+                height: 295.03px;
+                max-width: 100%;
+                @include maxResp($sm){
+                    height: auto;
+                }
+                .section-left{
+                    @include resp($xl){
+                        margin-right: 49.26px;
+                    }
+                    @include maxResp($xl){
+                        display: none;
+                    }
+                    width: 251.3px;
+                    height: 100%;
+                    // background-color: #2a2f2f;
+                    border-radius: 5px;
+                    background-color: rgb(20, 20, 20);
+                    border-style: solid;
+                    display: flex;
+                    align-items: center;
+                    padding:10px;
+                    .section-inner{
+                        background-color: #2a2f2f;
+                        border-color: grey;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-radius: 8px;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        img{
+                            width: inherit;
+                        }
+                    }
+                    
+                }
+                .section-right{
+                    width: 813.45px;
+                    height: 100%;
+                    border-radius: 5px;
+                    background-color: rgb(20, 20, 20);
+                    border-style: solid;
+                    display: flex;
+                    align-items: center;
+                    padding:10px 10px 10px 10px;
+                    justify-content: space-around;
+                    @include maxResp($lg){
+                        width: 700px;
+                    }
+                    @include maxResp($md){
+                        width: 600px;
+                    }
+                    @include maxResp($sm){
+                        width: 400px;
+                        flex-wrap: wrap;
+                    }
+                    @include maxResp($xs){
+                        width: 320px;
+                        flex-wrap: wrap;
+                    }
+                    .section-inner{
+                        height: 100%;
+                        width: 33.3%;
+                        display: flex;
+                        
+                        border-right-width: 1px;
+                        border-right-color: grey;
+                        border-right-style: solid ;
+                        flex-direction: column;
+                        &.border-none{
+                            border-right-width: 0px;
+                        }
+                        .title{
+                            margin-bottom: 30px;
+                            margin-top:20px;
+                            font-size:13px ;
+                            color: white;
+                        }
+                        .result{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between  ;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            gap: 30px;
+                            padding-left: 20px;
+                            padding-right:20px;
+                        }
+                        @include maxResp($sm){
+                            width: 100%;
+                            border-right-width: 0px;
+                        }
+                        @include maxResp($xs){
+                            width: 100%;
+                            border-right-width: 0px;
+                        }
+                    }
+                }
+            }
+            .submit{
+                margin-top: 32.44px;
+                margin-bottom: 10px;
+                float: right;
+            }
+        }
+    }
+    
+  }
+  

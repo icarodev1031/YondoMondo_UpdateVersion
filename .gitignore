@@ -1,0 +1,6 @@
+frontend/build/
+flattened/
+backend/node_modules/
+frontend/node_modules/
+frontend/.env*
+*.DS_Store

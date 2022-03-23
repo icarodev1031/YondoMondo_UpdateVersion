@@ -1,0 +1,124 @@
+#connect {
+  height: 100vh;
+  background-image: url("../imgs/illustrations/background.png");
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover;
+  
+  font-family: Mario Font;
+  
+  
+  @include maxResp($md){
+    padding-top: 200px;
+  }
+  
+  .container {
+    @include resp($md) {
+      padding-top: 100px;
+    }
+    
+    @include resp($lg) {
+      padding: 200px 47px 0;
+    }
+    
+    @include resp($xxl) {
+      padding-right: 40px !important;
+      padding-left: 25px !important;
+      padding-top:calc(100vh*0.3);
+    }
+  }
+
+  .title {
+      color: #ffffff;
+      font-size: 20px;
+
+      @include resp($xs) {
+        text-align: center;
+        line-height: 70px;
+        margin-top: 37px;
+      }
+      @include resp($md) {
+        letter-spacing: -3px;
+        line-height: 76px;
+        margin-top: 37px;
+      }
+      @include resp($xxl) {
+        text-align: left;
+        font-size: 35px;
+      }
+     
+  }
+
+  .img-area {
+    position: relative;
+    z-index: 500;
+    margin-top: 37px;
+    @include resp($xs) {
+      text-align: center;
+    }
+
+    img {
+      border-radius: 16px;
+
+      @include resp($sm) {
+        width: 400px;
+      }
+      @include resp($lg) {
+        width: 417px !important;
+      }
+      @include resp($xxl) {
+        width: 431px !important;
+      }
+      @include resp($xs) {
+        width: 380px;
+      }
+    }
+  }
+
+  .btn-group {
+    @include resp($xs) {
+      padding-top: 32px;
+      display: block;
+      text-align: center;
+      :nth-child(1) {
+        // margin-bottom: 16px;
+        @include resp($xxl) {
+          margin-bottom: 0px;
+        }
+      }
+      :nth-child(2) {
+        margin-bottom: 32px;
+        @include resp($xxl) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    @include resp($md) {
+      padding-top: 65px;
+      display: flex;
+      justify-content: center;
+      :nth-child(1) {
+        margin-right: 36px;
+        @include resp($lg) {
+          margin-right: 0px;
+        }
+        @include resp($xxl) {
+          margin-right: 23px;
+        }
+      }
+    }
+    @include resp($xxl) {
+      padding-top: 55px;
+    }
+  }
+}
+
+#root{
+  // background-image: url("../imgs/illustrations/background.png");
+  // background-repeat: no-repeat;
+  // width: 100vw;
+  // background-size: cover;
+  // @include resp($xl){
+  //   height: 100vh;
+  // }
+}

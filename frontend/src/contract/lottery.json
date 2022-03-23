@@ -1,0 +1,536 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_betIdx",
+				"type": "uint256"
+			}
+		],
+		"name": "betAndEnterGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "betToken",
+		"outputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "createLottery",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getBetLevel",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "me",
+				"type": "address"
+			}
+		],
+		"name": "getMyLottery",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betIndex1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betIndex2",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "addr",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "playerListIndex",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "betted",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "betIndex",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint8",
+								"name": "option1",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint8",
+								"name": "option2",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint8",
+								"name": "option3",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "score",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "win",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct LotteryContract.Player",
+						"name": "player1",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "addr",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "playerListIndex",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "betted",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "betIndex",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint8",
+								"name": "option1",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint8",
+								"name": "option2",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint8",
+								"name": "option3",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "score",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "win",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct LotteryContract.Player",
+						"name": "player2",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint8",
+						"name": "win",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "award",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "fee",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct LotteryContract.Lottery",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getPlayers",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "playerListIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "betted",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "option1",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "option2",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "option3",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "score",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "win",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct LotteryContract.Player[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getTier",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getUserList",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "registered",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betLevel",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct LotteryContract.User[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "_o1",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "_o2",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "_o3",
+				"type": "uint8"
+			}
+		],
+		"name": "onDecision",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "playerList",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "addr",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "playerListIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "betted",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "betIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint8",
+				"name": "option1",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "option2",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "option3",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint256",
+				"name": "score",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "win",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "registerUser",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "renounceOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "_token",
+				"type": "address"
+			}
+		],
+		"name": "setBetToken",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "_tier",
+				"type": "uint256[]"
+			}
+		],
+		"name": "setTier",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "tier",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "userList",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "addr",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "registered",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "betLevel",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

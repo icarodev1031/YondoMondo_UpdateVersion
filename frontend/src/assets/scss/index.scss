@@ -1,0 +1,32 @@
+@import '~bootstrap';
+
+@import './utils';
+@import './variable';
+@import './mixin';
+
+@import './components/navbar';
+@import './components/footer';
+@import './components/button';
+@import './components/input';
+
+@import './sections/community';
+@import './sections/get-yondo';
+@import './sections/hero';
+@import './sections/question';
+@import './sections/roadmap';
+@import './sections/team';
+@import './sections/universe';
+@import './sections/presale.scss';
+
+
+@import './game/connect.scss';
+@import './game/decision.scss';
+@import './game/decision1.scss';
+@import './game/list.scss';
+@import './game/result_1.scss';
+@import './game/result_2.scss';
+@import './game/result.scss';
+@import './game/list.scss';
+@import './game/staking.scss';
+@import './game/game_navbar.scss';
+

@@ -1,0 +1,224 @@
+#decision1 {
+    background-image: url("../imgs/illustrations/background.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: cover;
+    height: auto;
+    font-family: Mario Font;
+    padding-top:158.7px;
+    @include resp($xl){
+        padding-left: 139px;
+        padding-right:139px;
+        height: 918px;
+    }
+    @include resp($lg){
+        padding-left: 50px;
+        padding-right:50px;
+    }
+    .container-block{
+        
+        .title{
+            margin-bottom: 21.77px;
+            font-size: 20px;
+            text-align: center;
+            @include maxResp($sm){
+                font-size: 12px;
+            }
+        }
+        .content-text{
+            font-family: Metropolis;
+            line-height: 1;
+            margin-bottom: 40.3px;
+            font-size: 15px;
+            @include maxResp($sm){
+                font-size: 10px;
+            }
+            @include maxResp($lg){
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+        .content-area{
+            @include maxResp($lg){
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+            }
+            max-width: 100%;
+            .content-main{
+                display: flex;
+                height: 496px;
+                max-width: 100%;
+                @include maxResp($sm){
+                    height: auto;
+                }
+                
+                .section-left{
+                    @include resp($xl){
+                        margin-right: 49.26px;
+                    }
+                    @include maxResp($xl){
+                        display: none;
+                    }
+                    width: 251px;
+                    height: 100%;
+                    
+                    // background-color: #2a2f2f;
+                    border-radius: 5px;
+                    background-color: rgb(20, 20, 20);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    padding:24.78px 23.19px;
+                    .section-charactor{
+                        background-color: #0e0f0f;
+                        border-radius: 8px;
+                        width: 100%;
+                        height: 195px;
+                        display: flex;
+                        align-items: center;
+                        img{
+                            width: inherit;
+                        }
+                    }
+                    .section-score{
+                        width: 100%;
+                        margin-top:14.79px ;
+                        display: flex;
+                        justify-content: space-between;
+                        .section-score-item{
+                            display: flex;
+                            justify-content: space-around;
+                            color: white;
+                            font-size: 8px;
+                        }
+                    }
+                    .section-btn{
+                        margin-top: 40.22px;
+                    }
+                    
+                }
+                .section-right{
+                    width: 813.45px;
+                    display: flex;
+                    flex-direction: column;
+                    @include maxResp($lg){
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .section-right-up{
+                        display: flex;
+                        align-items: center;
+                        padding:39.94px 0px 27.63px 0px;
+                        justify-content: space-around;
+                        background-color: rgb(20, 20, 20);
+                        border-radius: 5px;
+                        @include maxResp($lg){
+                            width: 700px;
+                        }
+                        @include maxResp($md){
+                            width: 550px;
+                        }
+                        @include maxResp($sm){
+                            width: 400px;
+                            flex-wrap: wrap;
+                            height: auto;
+                            align-items:center;
+                        }
+                        @include maxResp($xs){
+                            width: 320px;
+                            flex-wrap: wrap;
+                        }
+                        height: 335.03px;
+                        .section-inner{
+                            height: auto;
+                            width: 33.3%;
+                            display: flex;
+                            border-right-width: 1px;
+                            border-right-color: grey;
+                            border-right-style: solid ;
+                            flex-direction: column;
+                            &.border-none{
+                                border-right-width: 0px;
+                            }
+                            .title{
+                                margin-bottom: 25px;
+                                margin-top:20px;
+                                font-size:13px ;
+                                color: white;
+                            }
+                            .result{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between  ;
+                                margin-left: 20px;
+                                margin-right: 20px;
+                                gap: 30px;
+                                padding-left: 20px;
+                                padding-right:20px;
+                            }
+                            @include maxResp($sm){
+                                width: 100%;
+                                border-right-width: 0px;
+                            }
+                            @include maxResp($xs){
+                                width: 100%;
+                                border-right-width: 0px;
+                            }
+                        }
+                    }
+                    .section-right-down{
+                        display: flex;
+                        align-items: center;
+                        padding:0px 39.94px ;
+                        justify-content: space-between;
+                        margin-top: 18px;
+                        background-color: rgb(20, 20, 20);
+                        border-radius: 5px;
+                        height: 143.4px;
+                        @include maxResp($lg){
+                            width: 700px;
+                            padding:21px 10px ;
+
+                        }
+                        @include maxResp($md){
+                            width: 550px;
+                            height: auto;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                        }
+                        @include maxResp($sm){
+                            width: 400px;
+                            flex-wrap: wrap;
+                        }
+                        @include maxResp($xs){
+                            width: 320px;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                        }
+                        .section-inner{
+                            padding-top: 21px;
+                            padding-bottom: 21px;
+                            @include maxResp($md){
+                                padding-top:5px;
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .submit{
+                margin-top: 32.44px;
+                margin-bottom: 10px;
+                float: right;
+                
+            }
+        }
+    }
+    
+  }
+  
